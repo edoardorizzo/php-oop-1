@@ -1,8 +1,8 @@
 <?php
 
 class Movie {
-    private $title;
-    private $genre;
+    public $title;
+    public $genre;
 
     public function __construct($title, $genre) {
         $this->title = $title;
