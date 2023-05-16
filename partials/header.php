@@ -6,3 +6,7 @@
 <body>
     <h1>Lista dei film</h1>
     <ul>
+    </ul>
+</body>
+
+</html>
