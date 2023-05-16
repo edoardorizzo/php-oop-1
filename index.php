@@ -1,7 +1,7 @@
 <?php
 
 require_once 'db.php';
-require_once 'partials/header.php';
+require_once 'partials/app.php';
 
 foreach ($movies as $movie) {
     echo "<li>";
@@ -9,7 +9,5 @@ foreach ($movies as $movie) {
     echo "Genere: " . $movie->set_genre()->set_name() . "<br>";
     echo "</li>";
 }
-
-require_once 'partials/footer.php';
 
 ?>
