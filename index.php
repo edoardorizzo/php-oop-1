@@ -15,7 +15,35 @@ Tra le varie proprietá, la classe Movie 'ha un' genere (sfruttare il concetto d
 class Movie {
 
     public $name;
-    public $type;
+    public $genre;
     public $duration;
 
+
+    function set_name($name) {
+        $this->name = $name;
+    }
+
+    function set_genre($genre) {
+        $this->genre = $genre;
+    }
+
+    function set_duration($duration) {
+        $this->duration = $duration;
+    }
+
 }
+
+$scream = new Movie();
+$lotr = new Movie();
+
+$scream->set_name('Scream');
+$lotr->set_name('Lord Of The Ring');
+
+$scream->set_genre('Horror');
+$lotr->set_genre('Fantasty');
+
+$scream->set_duration(1.30);
+$lotr->set_duration(3.20);
+
+var_dump($scream);
+var_dump($lotr);
